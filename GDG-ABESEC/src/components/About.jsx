@@ -49,7 +49,6 @@ export default function About() {
 
   return (
     <>
-  
       <section className="min-h-screen bg-linear-to-b from-gray-950 to-gray-900 flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-6xl font-bold text-slate-100 mb-4">
@@ -61,14 +60,12 @@ export default function About() {
         </div>
       </section>
 
-    
       <section
         ref={sectionRef}
         className="min-h-screen bg-linear-to-b from-gray-900 via-gray-950 to-black py-20 px-6 md:px-12 lg:px-20"
       >
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
-            
             <div
               className={`space-y-8 transition-all duration-1000 ${
                 isVisible
@@ -80,7 +77,7 @@ export default function About() {
                 <h2 className="text-5xl md:text-6xl font-bold text-slate-100 mb-6 text-left">
                   About Us
                 </h2>
-                <div className="h-1.5 w-24 bg-linear-to-r from-blue-400 via-emerald-400 to-amber-400 rounded-full mb-8"></div>
+                <div className="h-1.5 w-24 bg-linear-to-r from-red-500  via-green-400 to-yellow-400 rounded-full mb-8"></div>
               </div>
 
               <div className="space-y-6 text-left">
@@ -102,9 +99,7 @@ export default function About() {
                 </p>
               </div>
 
-             
               <div className="flex flex-wrap gap-4 pt-6 text-left">
-             
                 <div className="bg-linear-to-br from-slate-800/40 to-slate-900/40 border border-slate-700/50 rounded-xl px-6 py-4 backdrop-blur-sm hover:border-blue-400/40 transition-all hover:shadow-md hover:shadow-blue-500/10">
                   <div className="text-4xl font-bold text-blue-300">
                     {isVisible && <CountUp from={0} to={500} duration={2} />}+
@@ -112,7 +107,6 @@ export default function About() {
                   <div className="text-slate-400 text-sm mt-1">Members</div>
                 </div>
 
-                
                 <div className="bg-linear-to-br from-slate-800/40 to-slate-900/40 border border-slate-700/50 rounded-xl px-6 py-4 backdrop-blur-sm hover:border-emerald-400/40 transition-all hover:shadow-md hover:shadow-emerald-500/10">
                   <div className="text-4xl font-bold text-emerald-300">
                     {isVisible && <CountUp from={0} to={50} duration={2} />}+
@@ -120,7 +114,6 @@ export default function About() {
                   <div className="text-slate-400 text-sm mt-1">Events</div>
                 </div>
 
-               
                 <div className="bg-linear-to-br from-slate-800/40 to-slate-900/40 border border-slate-700/50 rounded-xl px-6 py-4 backdrop-blur-sm hover:border-amber-400/40 transition-all hover:shadow-md hover:shadow-amber-500/10">
                   <div className="text-4xl font-bold text-amber-300">
                     {isVisible && <CountUp from={0} to={20} duration={2} />}+
@@ -130,8 +123,7 @@ export default function About() {
               </div>
             </div>
 
-          
-          <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div className="w-full max-w-[95%] mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6 -mt-4">
   {images.map((image, index) => (
     <div
       key={image.id}
@@ -142,20 +134,18 @@ export default function About() {
       } ${index === 0 ? "sm:col-span-2" : ""}`}
     >
       <CardContainer className="w-full">
-        <CardBody className="relative rounded-xl overflow-hidden border border-slate-700/50 bg-slate-900/40 backdrop-blur-sm hover:border-slate-400/50 transition-all duration-300 hover:shadow-xl hover:shadow-slate-500/10">
+        <CardBody className="relative rounded-2xl overflow-hidden border border-slate-700/50 bg-slate-900/40 backdrop-blur-sm hover:border-slate-400/50 transition-all duration-300 ">
           <CardItem
-            translateZ="100"
-            className={`w-full h-full transition-transform duration-500 group-hover/card:scale-[1.05] ${
-              index !== 0 ? "scale-x-[1.05]" : ""
-            }`}
+            translateZ="120"
+            className="w-full h-full transition-transform duration-500 group-hover/card:scale-[1.07]"
           >
             <img
               src={image.src}
               alt={image.id}
-              className={`object-cover rounded-xl ${
+              className={`object-cover rounded-2xl ${
                 index === 0
-                  ? "w-full h-60 sm:h-[250px]"
-                  : "w-full h-72 sm:h-64"
+                  ? "w-full h-80 sm:h-[300px]" 
+                  : "w-full h-[260px] sm:h-[250px]" 
               }`}
             />
           </CardItem>
