@@ -31,17 +31,17 @@ export default function About() {
 
   const images = [
     {
-      src: "../../public/about-img1.jpg",
+      src: "/about-img1.jpg",
       title: "Community Events",
       id: "CE01",
     },
     {
-      src: "../../public/about-img2.jpg",
+      src: "/about-img2.jpg",
       title: "Tech Workshops",
       id: "TW02",
     },
     {
-      src: "../../public/about-img3.jpg",
+      src: "/about-img3.jpg",
       title: "Hackathons",
       id: "HK03",
     },
