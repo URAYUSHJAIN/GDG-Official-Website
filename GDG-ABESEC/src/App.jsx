@@ -1,7 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
-import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -12,7 +11,6 @@ function App() {
         </Routes>
       </div>
 
-      <Footer />
     </>
   );
 }
