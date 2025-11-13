@@ -1,5 +1,6 @@
 import Home from "../components/Home";
 import About from "../components/About";
+import WhatWeOffer from "../components/WhatWeOffer";
 import OrganisersAndActingGenerals from "../components/OrganiserAndActingGenerals";
 import Footer from "../components/Footer";
 
@@ -9,6 +10,7 @@ export default function HomePage() {
       <div className="w-full  overflow-x-hidden">
       <Home />
         <About />
+        <WhatWeOffer />
       <OrganisersAndActingGenerals />
       <Footer />
       </div>
