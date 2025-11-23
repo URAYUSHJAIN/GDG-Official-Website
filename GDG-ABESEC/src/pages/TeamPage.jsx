@@ -1,21 +1,12 @@
-import Home from "../components/Home";
-import About from "../components/About";
-import WhatWeOffer from "../components/WhatWeOffer";
-import OrganisersAndActingGenerals from "../components/OrganiserAndActingGenerals";
-import Footer from "../components/Footer";
-import WhyJoinGDG from "../components/WhyJoinGDG";
+import React from "react";
+import Team from "../components/Team";
 
-export default function HomePage() {
+const TeamPage = () => {
   return (
-    <>
-      <div className="w-full  overflow-x-hidden">
-      <Home />
-        <About />
-        <WhatWeOffer />
-      <OrganisersAndActingGenerals />
-      <WhyJoinGDG />
-      <Footer />
-      </div>
-    </>
+    <div className="min-h-screen bg-black text-white">
+      <Team />
+    </div>
   );
-}
+};
+
+export default TeamPage;
