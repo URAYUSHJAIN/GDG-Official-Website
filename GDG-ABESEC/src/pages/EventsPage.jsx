@@ -3,6 +3,7 @@ import EventsCard from "../components/EventCards";
 import Footer from "../components/Footer";
 import EventHero from "../components/Eventhero";
 
+import DomeGallery from "../components/ui/DomeGalery";
 
 export default function HomePage() {
   return (
@@ -10,6 +11,10 @@ export default function HomePage() {
       <div className="w-full  overflow-x-hidden">
         <EventHero />
         <EventsCard />
+        <EventsCard />
+        <div className="h-screen">
+          <DomeGallery />
+        </div>
         <Footer />
       </div>
     </>
