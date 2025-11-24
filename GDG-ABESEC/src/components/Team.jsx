@@ -4,8 +4,8 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 const teamMembers = {
   organiser: [
     { 
-      name: "Sarah Johnson", 
-      role: "Chief Organiser", 
+      name: "Arya Schwetank", 
+      role: "Organiser", 
       description: "Visionary leader orchestrating the entire event with 15+ years of experience.",
       img: "/TeamPageImages/Arya Schwetank.jpg",
       linkedin: "https://linkedin.com/in/sarahjohnson",
@@ -14,7 +14,7 @@ const teamMembers = {
   ],
   actingGenerals: [
     { 
-      name: "Michael Chen", 
+      name: "Prakhar Tiwari", 
       role: "Acting General", 
       description: "Strategic leader managing operations and team coordination.",
       img: "/TeamPageImages/Prakhar Tiwari.jpg",
@@ -22,7 +22,7 @@ const teamMembers = {
       github: "https://github.com/michaelchen"
     },
     { 
-      name: "Emily Rodriguez", 
+      name: "Ayush Jain", 
       role: "Acting General", 
       description: "Expert in logistics and event execution management.",
       img: "/TeamPageImages/Ayush Jain AG.jpg",
@@ -30,7 +30,7 @@ const teamMembers = {
       github: "https://github.com/emilyrodriguez"
     },
     { 
-      name: "David Kim", 
+      name: "Riya Jaiswal", 
       role: "Acting General", 
       description: "Technical lead ensuring smooth event infrastructure.",
       img: "/TeamPageImages/Riya Jaiswal.jpg",
@@ -38,7 +38,7 @@ const teamMembers = {
       github: "https://github.com/davidkim"
     },
     { 
-      name: "Lisa Anderson", 
+      name: "Kshitiz Srivastav", 
       role: "Acting General", 
       description: "Marketing and communications specialist for the event.",
       img: "/TeamPageImages/Kshitiz Srivastav.jpg",
@@ -46,7 +46,7 @@ const teamMembers = {
       github: "https://github.com/lisaanderson"
     },
     { 
-      name: "James Wilson", 
+      name: "Deepanshu Kaushik", 
       role: "Acting General", 
       description: "Operations manager handling event workflows.",
       img: "/TeamPageImages/Deepanshu Kaushik.jpg",
@@ -56,106 +56,106 @@ const teamMembers = {
   ],
   leads: [
     { 
-      name: "Maria Garcia", 
-      role: "Team Lead", 
+      name: "Alok Ranjan Singh", 
+      role: "Design Lead", 
       description: "Leading the design and creative direction team.",
       img: "/TeamPageImages/Alok Ranjan Singh.jpg",
       linkedin: "https://linkedin.com/in/mariagarcia",
       github: "https://github.com/mariagarcia"
     },
     { 
-      name: "Robert Taylor", 
-      role: "Team Lead", 
+      name: "Ayush Goyal", 
+      role: "Design Lead", 
       description: "Backend operations and database management lead.",
       img: "/TeamPageImages/Ayush Goyal.jpg",
       linkedin: "https://linkedin.com/in/roberttaylor",
       github: "https://github.com/roberttaylor"
     },
     { 
-      name: "Jennifer Lee", 
-      role: "Team Lead", 
+      name: "Keshav Khippal", 
+      role: "Technical Lead", 
       description: "Human resources and team coordination specialist.",
       img: "/TeamPageImages/Keshav Khippal.jpg",
       linkedin: "https://linkedin.com/in/jenniferlee",
       github: "https://github.com/jenniferlee"
     },
     { 
-      name: "William Brown", 
-      role: "Team Lead", 
+      name: "Anshika Srivastav", 
+      role: "Promotions Lead", 
       description: "Sales and partnership development lead.",
       img: "/TeamPageImages/Anshika Srivastav.jpg",
       linkedin: "https://linkedin.com/in/williambrown",
       github: "https://github.com/williambrown"
     },
     { 
-      name: "Amanda White", 
-      role: "Team Lead", 
+      name: "Harshit Agarwal", 
+      role: "Promotions Lead", 
       description: "Frontend development and UI implementation lead.",
       img: "/TeamPageImages/Harshit Agarwal.jpg",
       linkedin: "https://linkedin.com/in/amandawhite",
       github: "https://github.com/amandawhite"
     },
     { 
-      name: "Christopher Davis", 
-      role: "Team Lead", 
+      name: "Amanya Maurya", 
+      role: "Events Lead", 
       description: "DevOps and infrastructure deployment lead.",
       img: "/TeamPageImages/Amanya Maurya.jpg",
       linkedin: "https://linkedin.com/in/christopherdavis",
       github: "https://github.com/christopherdavis"
     },
     { 
-      name: "Jessica Martinez", 
-      role: "Team Lead", 
+      name: "Ayush Jain", 
+      role: "Elixer Lead", 
       description: "Content creation and storytelling lead.",
       img: "/TeamPageImages/Ayush Jain EH.jpg",
       linkedin: "https://linkedin.com/in/jessicamartinez",
       github: "https://github.com/jessicamartinez"
     },
     { 
-      name: "Daniel Thompson", 
-      role: "Team Lead", 
+      name: "Arpan Pal", 
+      role: "Elixer Lead", 
       description: "Data analytics and insights lead.",
       img: "/TeamPageImages/Arpan Pal.jpg",
       linkedin: "https://linkedin.com/in/danielthompson",
       github: "https://github.com/danielthompson"
     },
     { 
-      name: "Nicole Harris", 
-      role: "Team Lead", 
+      name: "Aditya Kumar Vaish", 
+      role: "Overall Coordinator", 
       description: "Quality assurance and testing lead.",
       img: "/TeamPageImages/Aditya Kr. OC.jpg",
       linkedin: "https://linkedin.com/in/nicoleharris",
       github: "https://github.com/nicoleharris"
     },
     { 
-      name: "Andrew Clark", 
-      role: "Team Lead", 
+      name: "Ayushi Singh", 
+      role: "Production Lead", 
       description: "Security and compliance lead.",
       img: "/TeamPageImages/Ayushi Singh.jpg",
       linkedin: "https://linkedin.com/in/andrewclark",
       github: "https://github.com/andrewclark"
     },
     { 
-      name: "Sophie Turner", 
-      role: "Team Lead", 
+      name: "Aadarsh Dhiman", 
+      role: "Production Lead", 
       description: "Community engagement and outreach lead.",
       img: "/TeamPageImages/Aadarsh Dhiman.jpg",
       linkedin: "https://linkedin.com/in/sophieturner",
       github: "https://github.com/sophieturner"
     },
     { 
-      name: "Nathan Brooks", 
-      role: "Team Lead", 
+      name: "Sakshi Vishnoi", 
+      role: "Social Media Lead", 
       description: "Product strategy and development lead.",
-      img: "/TeamPageImages/Arya Schwetank.jpg",
+      img: "/TeamPageImages/Sakshi Vishnoi.jpg",
       linkedin: "https://linkedin.com/in/nathanbrooks",
       github: "https://github.com/nathanbrooks"
     },
     { 
-      name: "Emma Wilson", 
-      role: "Team Lead", 
+      name: "Aditya Kumar Vaish", 
+      role: "Social Media Lead", 
       description: "Brand strategy and creative communications lead.",
-      img: "/TeamPageImages/Deepanshu Kaushik.jpg",
+      img: "/TeamPageImages/Aditya Kr. SM.jpg",
       linkedin: "https://linkedin.com/in/emmawilson",
       github: "https://github.com/emmawilson"
     }
@@ -600,7 +600,6 @@ const Team = () => {
           padding: 0 60px;
           display: flex;
           align-items: center;
-          gap: 80px;
         }
 
         .tm-organiser-card-wrapper {
@@ -609,7 +608,8 @@ const Team = () => {
 
         .tm-generals-section,
         .tm-leads-section {
-          margin-bottom: -20px;
+          margin-top: 100px;
+          margin-bottom: -10px;
         }
 
         .tm-grid {
@@ -824,19 +824,15 @@ const Team = () => {
                 />
               ))}
             </div>
-            {/* Card 12 - Center */}
-            <div className="tm-grid-single">
-              <TeamMemberCard 
-                member={teamMembers.leads[11]} 
-                index={17}
-              />
-            </div>
-            {/* Card 13 - Last card (NEW) */}
+            {/* Cards 12-13 - Left & Right */}
             <div className="tm-grid">
-              <TeamMemberCard 
-                member={teamMembers.leads[12]} 
-                index={18}
-              />
+              {teamMembers.leads.slice(11, 13).map((member, index) => (
+                <TeamMemberCard 
+                  key={index + 11} 
+                  member={member} 
+                  index={index + 17}
+                />
+              ))}
             </div>
           </div>
         </div>
