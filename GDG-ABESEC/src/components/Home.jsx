@@ -22,7 +22,7 @@ const Home = () => {
           alt="gdgLogo"
         />
 
-        <div className="fixed flex flex-wrap items-center top-20 left-4 lg:top-16 lg:left-32 font-mono font-bold text-3xl md:text-4xl">
+        <div className="fixed flex flex-wrap items-center top-20 left-4 lg:top-16 lg:left-32 font-sans-serif font-bold text-3xl md:text-4xl">
           <span className="text-blue-500">G</span>
           <span className="text-red-500">o</span>
           <span className="text-yellow-300">o</span>

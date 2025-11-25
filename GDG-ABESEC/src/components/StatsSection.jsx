@@ -44,10 +44,10 @@ const useIntersectionObserver = (ref, options = {}) => {
   return isIntersecting;
 };
 
-const FloatingAppIcon = ({ 
-  position, 
-  delay, 
-  isVisible, 
+const FloatingAppIcon = ({
+  position,
+  delay,
+  isVisible,
   index,
   iconSrc,
   iconAlt
@@ -129,8 +129,8 @@ const FloatingAppIcon = ({
       }}
       animate={controls}
     >
-      <img 
-        src={iconSrc} 
+      <img
+        src={iconSrc}
         alt={iconAlt || `App Icon ${index + 1}`}
         className="w-12 h-12 md:w-14 md:h-14 object-contain"
       />
@@ -163,8 +163,8 @@ const StatItem = ({ headline, number, suffix, delay, isVisible }) => {
       className="text-center"
     >
       {headline && (
-        <motion.p 
-          className="text-sm md:text-base text-gray-400 mb-2 font-normal space-mono-regular"
+        <motion.p
+          className="text-sm md:text-base text-gray-400 mb-2 font-normal font-sans"
           initial={{ opacity: 0 }}
           animate={isVisible ? { opacity: 1 } : { opacity: 0 }}
           transition={{ duration: 0.8, delay: delay + 0.2 }}
@@ -172,7 +172,7 @@ const StatItem = ({ headline, number, suffix, delay, isVisible }) => {
           {headline}
         </motion.p>
       )}
-      <h3 className="text-4xl md:text-6xl lg:text-7xl font-bold space-mono-bold">
+      <h3 className="text-4xl md:text-6xl lg:text-7xl font-bold font-sans">
         <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-500 via-yellow-400 to-green-500">
           {number}
         </span>
@@ -197,14 +197,14 @@ export default function StatsSection() {
   });
 
   const googleColors = [
-    { bgColor: 'rgba(66, 133, 244, 0.1)', borderColor: '#4285F4' }, 
-    { bgColor: 'rgba(234, 67, 53, 0.1)', borderColor: '#EA4335' }, 
-    { bgColor: 'rgba(251, 188, 5, 0.1)', borderColor: '#FBBC05' }, 
-    { bgColor: 'rgba(52, 168, 83, 0.1)', borderColor: '#34A853' }, 
-    { bgColor: 'rgba(66, 133, 244, 0.15)', borderColor: '#4285F4' }, 
-    { bgColor: 'rgba(234, 67, 53, 0.15)', borderColor: '#EA4335' }, 
-    { bgColor: 'rgba(251, 188, 5, 0.15)', borderColor: '#FBBC05' }, 
-    { bgColor: 'rgba(52, 168, 83, 0.15)', borderColor: '#34A853' }, 
+    { bgColor: 'rgba(66, 133, 244, 0.1)', borderColor: '#4285F4' },
+    { bgColor: 'rgba(234, 67, 53, 0.1)', borderColor: '#EA4335' },
+    { bgColor: 'rgba(251, 188, 5, 0.1)', borderColor: '#FBBC05' },
+    { bgColor: 'rgba(52, 168, 83, 0.1)', borderColor: '#34A853' },
+    { bgColor: 'rgba(66, 133, 244, 0.15)', borderColor: '#4285F4' },
+    { bgColor: 'rgba(234, 67, 53, 0.15)', borderColor: '#EA4335' },
+    { bgColor: 'rgba(251, 188, 5, 0.15)', borderColor: '#FBBC05' },
+    { bgColor: 'rgba(52, 168, 83, 0.15)', borderColor: '#34A853' },
   ];
 
   const appIcons = [
@@ -287,7 +287,7 @@ export default function StatsSection() {
         ref={sectionRef}
         className="sticky top-0 min-h-screen bg-black py-16 md:py-20 px-6 md:px-12 lg:px-20 overflow-hidden flex items-center justify-center"
       >
-     
+
         <div className="absolute inset-0 pointer-events-none">
           {iconPositions.map((position, index) => (
             <FloatingAppIcon
@@ -302,7 +302,7 @@ export default function StatsSection() {
           ))}
         </div>
 
-       
+
         <div className="relative z-10 max-w-4xl mx-auto flex flex-col items-center justify-center space-y-12 md:space-y-16">
           {stats.map((stat, index) => (
             <StatItem
