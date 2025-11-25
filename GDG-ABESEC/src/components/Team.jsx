@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
+import Navbar from './ui/Navbar';
 
 const teamMembers = {
   organiser: [
@@ -8,8 +9,8 @@ const teamMembers = {
       role: "Organiser", 
       description: "Visionary leader orchestrating the entire event with 15+ years of experience.",
       img: "/TeamPageImages/Arya Schwetank.jpg",
-      linkedin: "https://linkedin.com/in/sarahjohnson",
-      github: "https://github.com/sarahjohnson"
+       linkedin: "https://www.linkedin.com/in/aryaschwetank/",
+        github: "https://github.com/aryaschwetank",
     }
   ],
   actingGenerals: [
@@ -18,40 +19,42 @@ const teamMembers = {
       role: "Acting General", 
       description: "Strategic leader managing operations and team coordination.",
       img: "/TeamPageImages/Prakhar Tiwari.jpg",
-      linkedin: "https://linkedin.com/in/michaelchen",
-      github: "https://github.com/michaelchen"
+       linkedin: "https://www.linkedin.com/in/prakhar-tiwari1908/",
+        github: "https://github.com/prakhar-174",
     },
     { 
       name: "Ayush Jain", 
       role: "Acting General", 
       description: "Expert in logistics and event execution management.",
       img: "/TeamPageImages/Ayush Jain AG.jpg",
-      linkedin: "https://linkedin.com/in/emilyrodriguez",
-      github: "https://github.com/emilyrodriguez"
+     linkedin: "https://www.linkedin.com/in/urayushjain/",
+        github: "https://github.com/URAYUSHJAIN",
     },
     { 
       name: "Riya Jaiswal", 
       role: "Acting General", 
       description: "Technical lead ensuring smooth event infrastructure.",
       img: "/TeamPageImages/Riya Jaiswal.jpg",
-      linkedin: "https://linkedin.com/in/davidkim",
-      github: "https://github.com/davidkim"
+       linkedin: "https://www.linkedin.com/in/riyajstar07/",
+        github: "https://github.com/riyajstar07"
     },
     { 
       name: "Kshitiz Srivastav", 
       role: "Acting General", 
       description: "Marketing and communications specialist for the event.",
       img: "/TeamPageImages/Kshitiz Srivastav.jpg",
-      linkedin: "https://linkedin.com/in/lisaanderson",
-      github: "https://github.com/lisaanderson"
+     linkedin:
+          "https://www.linkedin.com/in/kshitiz-srivastav-a87028333/",
+        github: "",
     },
     { 
       name: "Deepanshu Kaushik", 
       role: "Acting General", 
       description: "Operations manager handling event workflows.",
       img: "/TeamPageImages/Deepanshu Kaushik.jpg",
-      linkedin: "https://linkedin.com/in/jameswilson",
-      github: "https://github.com/jameswilson"
+        linkedin:
+          "https://www.linkedin.com/in/deepanshu-kaushik-174059297/",
+        github: "https://github.com/Deepanshu-ui-dev",
     }
   ],
   leads: [
@@ -192,6 +195,7 @@ const TeamMemberCard = ({ member, index }) => {
       }}
       className="tm-card"
     >
+      
       <style jsx>{`
         .tm-card {
           width: 100%;
@@ -701,7 +705,28 @@ const Team = () => {
       `}</style>
 
       <div className="tm-wrapper">
-        {/* Hero Section */}
+        <div className="relative z-100 pointer-events-none">
+        <img
+          src="https://www.svgrepo.com/show/353810/google-developers.svg"
+          className="fixed h-12 w-14 md:h-16 md:w-20 top-6 left-4 lg:top-12 lg:left-8 pointer-events-auto"
+          alt="gdgLogo"
+        />
+
+        <div className="fixed flex flex-wrap items-center top-20 left-4 lg:top-16 lg:left-32 font-mono font-bold text-3xl md:text-4xl">
+          <span className="text-blue-500">G</span>
+          <span className="text-red-500">o</span>
+          <span className="text-yellow-300">o</span>
+          <span className="text-green-500">g</span>
+          <span className="text-blue-500">l</span>
+          <span className="text-red-500">e</span>
+        </div>
+
+        <div className="fixed text-white text-xl lg:text-3xl top-28 left-1 ml-9.5">
+          Developers Group
+        </div>
+      </div>
+            <Navbar />
+      
         <section className="tm-hero">
           <div className="tm-hero-content">
             <h1 className="tm-hero-title">Meet Our Team</h1>
@@ -713,9 +738,9 @@ const Team = () => {
           </div>
         </section>
 
-        {/* Team Sections */}
+
         <div className="tm-section">
-          {/* Organiser Section */}
+
           <div className="tm-organiser-section">
             <div className="tm-organiser-container">
               <div className="tm-organiser-card-wrapper">
@@ -731,7 +756,7 @@ const Team = () => {
             </div>
           </div>
 
-          {/* Acting Generals Section */}
+
           <div className="tm-generals-section">
             <SectionHeading title="ACTING GENERALS" />
             <div className="tm-grid">
@@ -760,10 +785,10 @@ const Team = () => {
             </div>
           </div>
 
-          {/* Leads Section - 13 cards total */}
+
           <div className="tm-leads-section">
             <SectionHeading title="LEADS" />
-            {/* Cards 1-2 */}
+
             <div className="tm-grid">
               {teamMembers.leads.slice(0, 2).map((member, index) => (
                 <TeamMemberCard 
@@ -773,14 +798,14 @@ const Team = () => {
                 />
               ))}
             </div>
-            {/* Card 3 - Center */}
+
             <div className="tm-grid-single">
               <TeamMemberCard 
                 member={teamMembers.leads[2]} 
                 index={8}
               />
             </div>
-            {/* Cards 4-5 */}
+
             <div className="tm-grid">
               {teamMembers.leads.slice(3, 5).map((member, index) => (
                 <TeamMemberCard 
@@ -790,14 +815,14 @@ const Team = () => {
                 />
               ))}
             </div>
-            {/* Card 6 - Center */}
+
             <div className="tm-grid-single">
               <TeamMemberCard 
                 member={teamMembers.leads[5]} 
                 index={11}
               />
             </div>
-            {/* Cards 7-8 */}
+
             <div className="tm-grid">
               {teamMembers.leads.slice(6, 8).map((member, index) => (
                 <TeamMemberCard 
@@ -807,14 +832,14 @@ const Team = () => {
                 />
               ))}
             </div>
-            {/* Card 9 - Center */}
+
             <div className="tm-grid-single">
               <TeamMemberCard 
                 member={teamMembers.leads[8]} 
                 index={14}
               />
             </div>
-            {/* Cards 10-11 */}
+
             <div className="tm-grid">
               {teamMembers.leads.slice(9, 11).map((member, index) => (
                 <TeamMemberCard 
@@ -824,7 +849,7 @@ const Team = () => {
                 />
               ))}
             </div>
-            {/* Cards 12-13 - Left & Right */}
+
             <div className="tm-grid">
               {teamMembers.leads.slice(11, 13).map((member, index) => (
                 <TeamMemberCard 
