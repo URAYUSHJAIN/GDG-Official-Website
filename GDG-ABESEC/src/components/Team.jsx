@@ -63,7 +63,7 @@ const teamMembers = {
       role: "Design Lead", 
       description: "Leading the design and creative direction team.",
       img: "/TeamPageImages/Alok Ranjan Singh.jpg",
-      linkedin: "https://linkedin.com/in/",
+      linkedin: "https://www.linkedin.com/in/alok-ranjan-singh-979036296/",
       github: "https://github.com/"
     },
     { 
@@ -71,7 +71,7 @@ const teamMembers = {
       role: "Design Lead", 
       description: "Backend operations and database management lead.",
       img: "/TeamPageImages/Ayush Goyal.jpg",
-      linkedin: "https://linkedin.com/in/",
+      linkedin: "https://www.linkedin.com/in/ayush-goyal-225795274/",
       github: "https://github.com/"
     },
     { 
@@ -79,7 +79,7 @@ const teamMembers = {
       role: "Technical Lead", 
       description: "Human resources and team coordination specialist.",
       img: "/TeamPageImages/Keshav Khippal.jpg",
-      linkedin: "https://linkedin.com/in/",
+      linkedin: "https://www.linkedin.com/in/keshav-khippal/",
       github: "https://github.com/"
     },
     { 
@@ -87,7 +87,7 @@ const teamMembers = {
       role: "Promotions Lead", 
       description: "Sales and partnership development lead.",
       img: "/TeamPageImages/Anshika Srivastav.jpg",
-      linkedin: "https://linkedin.com/in/",
+      linkedin: "https://www.linkedin.com/in/webd-anshika-srivastav/",
       github: "https://github.com/"
     },
     { 
@@ -95,7 +95,7 @@ const teamMembers = {
       role: "Promotions Lead", 
       description: "Frontend development and UI implementation lead.",
       img: "/TeamPageImages/Harshit Agarwal.jpg",
-      linkedin: "https://linkedin.com/in/",
+      linkedin: "https://www.linkedin.com/in/harshit-agrawal-5aab84197/",
       github: "https://github.com/"
     },
     { 
@@ -103,7 +103,7 @@ const teamMembers = {
       role: "Events Lead", 
       description: "DevOps and infrastructure deployment lead.",
       img: "/TeamPageImages/Amanya Maurya.jpg",
-      linkedin: "https://linkedin.com/in/",
+      linkedin: "https://www.linkedin.com/in/amanya-maurya-1378aa296/",
       github: "https://github.com/"
     },
     { 
@@ -111,7 +111,7 @@ const teamMembers = {
       role: "Elixer Lead", 
       description: "Content creation and storytelling lead.",
       img: "/TeamPageImages/Ayush Jain EH.jpg",
-      linkedin: "https://linkedin.com/in/",
+      linkedin: "https://www.linkedin.com/in/urayushjain",
       github: "https://github.com/"
     },
     { 
@@ -119,7 +119,7 @@ const teamMembers = {
       role: "Elixer Lead", 
       description: "Data analytics and insights lead.",
       img: "/TeamPageImages/Arpan Pal.jpg",
-      linkedin: "https://linkedin.com/in/",
+      linkedin: "https://www.linkedin.com/in/arpan-pal-9357a3310/",
       github: "https://github.com/"
     },
     { 
@@ -127,7 +127,7 @@ const teamMembers = {
       role: "Overall Coordinator", 
       description: "Quality assurance and testing lead.",
       img: "/TeamPageImages/Aditya Kr. OC.jpg",
-      linkedin: "https://linkedin.com/in/",
+      linkedin: "https://www.linkedin.com/in/aditya-vaish-482a11281/",
       github: "https://github.com/"
     },
     { 
@@ -135,7 +135,7 @@ const teamMembers = {
       role: "Production Lead", 
       description: "Security and compliance lead.",
       img: "/TeamPageImages/Ayushi Singh.jpg",
-      linkedin: "https://linkedin.com/in/",
+      linkedin: "https://www.linkedin.com/in/ayushisingh29/",
       github: "https://github.com/"
     },
     { 
@@ -143,7 +143,7 @@ const teamMembers = {
       role: "Production Lead", 
       description: "Community engagement and outreach lead.",
       img: "/TeamPageImages/Aadarsh Dhiman.jpg",
-      linkedin: "https://linkedin.com/in/",
+      linkedin: "https://www.linkedin.com/in/aadarsh-dhiman-5170a634a/",
       github: "https://github.com/"
     },
     { 
@@ -151,7 +151,7 @@ const teamMembers = {
       role: "Social Media Lead", 
       description: "Product strategy and development lead.",
       img: "/TeamPageImages/Sakshi Vishnoi.jpg",
-      linkedin: "https://linkedin.com/in/",
+      linkedin: "https://www.linkedin.com/in/sakshi-vishnoi-7770b2315/",
       github: "https://github.com/"
     },
     { 
@@ -159,7 +159,7 @@ const teamMembers = {
       role: "Social Media Lead", 
       description: "Brand strategy and creative communications lead.",
       img: "/TeamPageImages/Aditya Kr. SM.jpg",
-      linkedin: "https://linkedin.com/in/",
+      linkedin: "https://www.linkedin.com/in/aditya-vaish-482a11281/",
       github: "https://github.com/"
     }
   ]
